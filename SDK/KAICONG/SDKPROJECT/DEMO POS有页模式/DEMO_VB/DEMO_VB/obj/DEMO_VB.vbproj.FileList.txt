@@ -1,0 +1,13 @@
+bin\Debug\DEMO_VB.exe
+bin\Debug\DEMO_VB.pdb
+bin\Debug\DEMO_VB.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\DEMO_VB.Form1.resources
+obj\Debug\DEMO_VB.Resources.resources
+obj\Debug\DEMO_VB.vbproj.GenerateResource.Cache
+obj\Debug\DEMO_VB.exe
+obj\Debug\DEMO_VB.xml
+obj\Debug\DEMO_VB.pdb
+bin\Debug\POSDLLV2.pdb
+bin\Debug\POSDLLV1.dll
+bin\Debug\POSDLLV1.pdb

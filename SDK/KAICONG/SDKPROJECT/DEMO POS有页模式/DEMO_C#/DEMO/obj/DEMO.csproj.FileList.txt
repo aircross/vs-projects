@@ -1,0 +1,10 @@
+bin\Debug\DEMO.exe
+bin\Debug\DEMO.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\DEMO.POSDLL_V1.resources
+obj\Debug\DEMO.Properties.Resources.resources
+obj\Debug\DEMO.csproj.GenerateResource.Cache
+obj\Debug\DEMO.exe
+obj\Debug\DEMO.pdb
+bin\Debug\POSDLLV1.dll
+bin\Debug\POSDLLV1.pdb

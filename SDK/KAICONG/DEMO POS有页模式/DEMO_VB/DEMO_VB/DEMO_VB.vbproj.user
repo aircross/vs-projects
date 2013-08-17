@@ -1,0 +1,5 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <StartWorkingDirectory>F:\peng\SDKPROJECT\DEMO POS有页模式\DEMO_VB\DEMO_VB\bin\Debug\</StartWorkingDirectory>
+  </PropertyGroup>
+</Project>
