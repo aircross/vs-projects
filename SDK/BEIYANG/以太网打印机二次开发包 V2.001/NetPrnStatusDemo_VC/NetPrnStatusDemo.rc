@@ -1,0 +1,295 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\NetPrnStatusDemo.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MONITOR DIALOG DISCARDABLE  0, 0, 267, 173
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_CAPTION | WS_SYSMENU
+CAPTION "Net Printer Status Monitor"
+FONT 10, "Times New Roman"
+BEGIN
+    PUSHBUTTON      "Start monitor",IDC_START,35,145,50,14
+    PUSHBUTTON      "Return",IDCANCEL,183,145,50,14
+    GROUPBOX        "Net Printer Status",IDC_STATIC,13,23,241,113
+    PUSHBUTTON      " Paper is end",IDC_PAPEREND,155,35,70,14
+    PUSHBUTTON      "Paper is near end",IDC_PAPERNAREEND,25,95,84,14
+    PUSHBUTTON      "Cover is open",IDC_COVER,25,55,75,14
+    PUSHBUTTON      "Cut is error",IDC_CUT,25,75,66,14
+    PUSHBUTTON      "Automatically restorable error    ",IDC_AUTO,25,115,128,
+                    14
+    PUSHBUTTON      "Cashdrawer is open",IDC_CASHDRAWER,155,55,95,14
+    PUSHBUTTON      "Running feed button",IDC_FEED,155,75,97,14
+    PUSHBUTTON      "Printer is busy      ",IDC_PRNBUSY,155,95,89,14
+    PUSHBUTTON      "Restorable error",IDC_RESTOR,155,115,86,14
+    PUSHBUTTON      "Stop monitor",IDC_STOP,109,145,50,14
+    PUSHBUTTON      "Printer is off-line",IDC_OFFLINE,25,35,84,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MONITOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 260
+        BOTTOMMARGIN, 166
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About NetPrnStatusDemo"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "NetPrnStatusDemo Version 2.001",IDC_STATIC,40,10,131,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2006",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_NETPRNSTATUSDEMO_DIALOG DIALOGEX 0, 0, 277, 111
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "BeiYang Net Printer Status Monitor Demo V2.001"
+FONT 10, "Times New Roman"
+BEGIN
+    PUSHBUTTON      "Printer Status",IDC_STATUS,108,88,61,14,WS_GROUP
+    GROUPBOX        "",IDC_STATIC,7,6,261,36
+    CONTROL         "IPAddress1",IDC_IPADDRESS1,"SysIPAddress32",WS_TABSTOP,
+                    109,20,100,15
+    PUSHBUTTON      "Printing Demo",IDC_PRINT,42,88,61,14,WS_GROUP
+    LTEXT           "IP Address:",IDC_STATIC,69,22,37,8
+    PUSHBUTTON      "Exit",IDC_BUTTON4,174,88,61,14
+    GROUPBOX        "",IDC_STATIC,7,47,261,38,WS_DISABLED
+    LTEXT           "IP Address List:",IDC_STATIC,56,63,50,8
+    COMBOBOX        IDC_COMBO2,109,62,100,43,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Auto Get Device IP Address",IDC_RADIO1,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,13,47,103,10
+    CONTROL         "Setting IP Address",IDC_RADIO2,"Button",
+                    BS_AUTORADIOBUTTON,15,5,74,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_NETPRNSTATUSDEMO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 274
+        BOTTOMMARGIN, 108
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Traffic Light.ico"
+IDI_GREEN               ICON    DISCARDABLE     "res\\green.ico"
+IDI_RED                 ICON    DISCARDABLE     "res\\red.ico"
+IDI_BLACK               ICON    DISCARDABLE     "res\\black.ico"
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,0,1
+ PRODUCTVERSION 2,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "SNBC\0"
+            VALUE "FileDescription", "NetPrnStatusDemo MFC Application\0"
+            VALUE "FileVersion", "2, 0, 0, 1\0"
+            VALUE "InternalName", "NetPrnStatusDemo\0"
+            VALUE "LegalCopyright", "Copyright (C) 2006\0"
+            VALUE "LegalTrademarks", "BEIYANG\0"
+            VALUE "OriginalFilename", "NetPrnStatusDemo.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "NetPrnStatusDemo Application\0"
+            VALUE "ProductVersion", "2, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_NETPRNSTATUSDEMO_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO2, 0x403, 7, 0
+0x4e3c, 0x4c55, 0x3e4c, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About NetPrnStatusDemo..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\NetPrnStatusDemo.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

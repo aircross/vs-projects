@@ -1,0 +1,60 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: TestUSB - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/TestUSB.res" /d "NDEBUG" "G:\4-USBSetup\SW_GENERALUSBDLL\TestUSB\TestUSB.rc"" 
+Creating temporary file "F:\DOCUME~1\GMX\LOCALS~1\Temp\RSP16.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Release/" /Fp"Release/TestUSB.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"G:\4-USBSetup\SW_GENERALUSBDLL\TestUSB\DlgID.cpp"
+"G:\4-USBSetup\SW_GENERALUSBDLL\TestUSB\InputBox.cpp"
+"G:\4-USBSetup\SW_GENERALUSBDLL\TestUSB\MainFrm.cpp"
+"G:\4-USBSetup\SW_GENERALUSBDLL\TestUSB\TestUSB.cpp"
+"G:\4-USBSetup\SW_GENERALUSBDLL\TestUSB\TestUSBDoc.cpp"
+"G:\4-USBSetup\SW_GENERALUSBDLL\TestUSB\TestUSBView.cpp"
+]
+Creating command line "cl.exe @F:\DOCUME~1\GMX\LOCALS~1\Temp\RSP16.tmp" 
+Creating temporary file "F:\DOCUME~1\GMX\LOCALS~1\Temp\RSP17.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Release/" /Fp"Release/TestUSB.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"G:\4-USBSetup\SW_GENERALUSBDLL\TestUSB\StdAfx.cpp"
+]
+Creating command line "cl.exe @F:\DOCUME~1\GMX\LOCALS~1\Temp\RSP17.tmp" 
+Creating temporary file "F:\DOCUME~1\GMX\LOCALS~1\Temp\RSP18.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/TestUSB.pdb" /machine:I386 /out:"../Release/TestUSB.exe" 
+".\Release\DlgID.obj"
+".\Release\InputBox.obj"
+".\Release\MainFrm.obj"
+".\Release\StdAfx.obj"
+".\Release\TestUSB.obj"
+".\Release\TestUSBDoc.obj"
+".\Release\TestUSBView.obj"
+".\Release\TestUSB.res"
+]
+Creating command line "link.exe @F:\DOCUME~1\GMX\LOCALS~1\Temp\RSP18.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+DlgID.cpp
+InputBox.cpp
+MainFrm.cpp
+TestUSB.cpp
+TestUSBDoc.cpp
+TestUSBView.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+TestUSB.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

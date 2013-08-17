@@ -1,0 +1,101 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: NetPrnStatusDemo - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/NetPrnStatusDemo.res" /d "NDEBUG" /d "_AFXDLL" "F:\无线以太网JK-W01项目(CVS)\SW_PrnStatus\NetPrnStatusDemo.rc"" 
+Creating temporary file "C:\DOCUME~1\liuwei\LOCALS~1\Temp\RSP22C.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Release/NetPrnStatusDemo.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\无线以太网JK-W01项目(CVS)\SW_PrnStatus\BtnST.cpp"
+"F:\无线以太网JK-W01项目(CVS)\SW_PrnStatus\NetPrnStatusDemo.cpp"
+"F:\无线以太网JK-W01项目(CVS)\SW_PrnStatus\NetPrnStatusDemoDlg.cpp"
+"F:\无线以太网JK-W01项目(CVS)\SW_PrnStatus\STATUS.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\liuwei\LOCALS~1\Temp\RSP22C.tmp" 
+Creating temporary file "C:\DOCUME~1\liuwei\LOCALS~1\Temp\RSP22D.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Release/NetPrnStatusDemo.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"F:\无线以太网JK-W01项目(CVS)\SW_PrnStatus\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\liuwei\LOCALS~1\Temp\RSP22D.tmp" 
+Creating temporary file "C:\DOCUME~1\liuwei\LOCALS~1\Temp\RSP22E.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/NetPrnStatusDemo.pdb" /machine:I386 /out:"Release/NetPrnStatusDemo.exe" 
+".\Release\BtnST.obj"
+".\Release\NetPrnStatusDemo.obj"
+".\Release\NetPrnStatusDemoDlg.obj"
+".\Release\STATUS.obj"
+".\Release\StdAfx.obj"
+".\Release\NetPrnStatusDemo.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\liuwei\LOCALS~1\Temp\RSP22E.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+BtnST.cpp
+NetPrnStatusDemo.cpp
+NetPrnStatusDemoDlg.cpp
+STATUS.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+NetPrnStatusDemo.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: NetPrnStatusDemo - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/NetPrnStatusDemo.res" /d "_DEBUG" /d "_AFXDLL" "F:\无线以太网JK-W01项目(CVS)\SW_PrnStatus\NetPrnStatusDemo.rc"" 
+Creating temporary file "C:\DOCUME~1\liuwei\LOCALS~1\Temp\RSP230.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Debug/NetPrnStatusDemo.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\无线以太网JK-W01项目(CVS)\SW_PrnStatus\BtnST.cpp"
+"F:\无线以太网JK-W01项目(CVS)\SW_PrnStatus\NetPrnStatusDemo.cpp"
+"F:\无线以太网JK-W01项目(CVS)\SW_PrnStatus\NetPrnStatusDemoDlg.cpp"
+"F:\无线以太网JK-W01项目(CVS)\SW_PrnStatus\STATUS.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\liuwei\LOCALS~1\Temp\RSP230.tmp" 
+Creating temporary file "C:\DOCUME~1\liuwei\LOCALS~1\Temp\RSP231.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Debug/NetPrnStatusDemo.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\无线以太网JK-W01项目(CVS)\SW_PrnStatus\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\liuwei\LOCALS~1\Temp\RSP231.tmp" 
+Creating temporary file "C:\DOCUME~1\liuwei\LOCALS~1\Temp\RSP232.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/NetPrnStatusDemo.pdb" /debug /machine:I386 /out:"Debug/NetPrnStatusDemo.exe" /pdbtype:sept 
+".\Debug\BtnST.obj"
+".\Debug\NetPrnStatusDemo.obj"
+".\Debug\NetPrnStatusDemoDlg.obj"
+".\Debug\STATUS.obj"
+".\Debug\StdAfx.obj"
+".\Debug\NetPrnStatusDemo.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\liuwei\LOCALS~1\Temp\RSP232.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+BtnST.cpp
+NetPrnStatusDemo.cpp
+NetPrnStatusDemoDlg.cpp
+STATUS.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+NetPrnStatusDemo.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
