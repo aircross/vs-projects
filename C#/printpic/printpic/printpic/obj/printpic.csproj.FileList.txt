@@ -1,0 +1,8 @@
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\printpic.Form1.resources
+obj\Debug\printpic.Properties.Resources.resources
+obj\Debug\printpic.csproj.GenerateResource.Cache
+bin\Debug\printpic.exe
+bin\Debug\printpic.pdb
+obj\Debug\printpic.exe
+obj\Debug\printpic.pdb
