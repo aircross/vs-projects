@@ -49,8 +49,13 @@
             this.buttonLoadPicture = new System.Windows.Forms.Button();
             this.buttonPrintPicture = new System.Windows.Forms.Button();
             this.openFileDialogLoadPicture = new System.Windows.Forms.OpenFileDialog();
+            this.groupBoxOutFormat = new System.Windows.Forms.GroupBox();
+            this.checkBoxOutCcode = new System.Windows.Forms.CheckBox();
+            this.checkBoxOutBin = new System.Windows.Forms.CheckBox();
+            this.buttonPrintToFile = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPicture)).BeginInit();
             this.groupBoxPaperSize.SuspendLayout();
+            this.groupBoxOutFormat.SuspendLayout();
             this.SuspendLayout();
             // 
             // comboBoxPort
@@ -71,6 +76,7 @@
             this.comboBoxPort.Name = "comboBoxPort";
             this.comboBoxPort.Size = new System.Drawing.Size(121, 20);
             this.comboBoxPort.TabIndex = 0;
+            this.comboBoxPort.Visible = false;
             // 
             // label1
             // 
@@ -80,6 +86,7 @@
             this.label1.Size = new System.Drawing.Size(35, 12);
             this.label1.TabIndex = 1;
             this.label1.Text = "Port#";
+            this.label1.Visible = false;
             // 
             // label2
             // 
@@ -89,6 +96,7 @@
             this.label2.Size = new System.Drawing.Size(53, 12);
             this.label2.TabIndex = 2;
             this.label2.Text = "Baudrate";
+            this.label2.Visible = false;
             // 
             // comboBoxBaudrate
             // 
@@ -104,6 +112,7 @@
             this.comboBoxBaudrate.Name = "comboBoxBaudrate";
             this.comboBoxBaudrate.Size = new System.Drawing.Size(121, 20);
             this.comboBoxBaudrate.TabIndex = 3;
+            this.comboBoxBaudrate.Visible = false;
             // 
             // label3
             // 
@@ -113,6 +122,7 @@
             this.label3.Size = new System.Drawing.Size(53, 12);
             this.label3.TabIndex = 4;
             this.label3.Text = "Databits";
+            this.label3.Visible = false;
             // 
             // comboBoxDatabits
             // 
@@ -127,6 +137,7 @@
             this.comboBoxDatabits.Name = "comboBoxDatabits";
             this.comboBoxDatabits.Size = new System.Drawing.Size(121, 20);
             this.comboBoxDatabits.TabIndex = 5;
+            this.comboBoxDatabits.Visible = false;
             // 
             // label4
             // 
@@ -136,6 +147,7 @@
             this.label4.Size = new System.Drawing.Size(65, 12);
             this.label4.TabIndex = 6;
             this.label4.Text = "Paritybits";
+            this.label4.Visible = false;
             // 
             // comboBoxParitybits
             // 
@@ -151,6 +163,7 @@
             this.comboBoxParitybits.Name = "comboBoxParitybits";
             this.comboBoxParitybits.Size = new System.Drawing.Size(121, 20);
             this.comboBoxParitybits.TabIndex = 7;
+            this.comboBoxParitybits.Visible = false;
             // 
             // label5
             // 
@@ -160,6 +173,7 @@
             this.label5.Size = new System.Drawing.Size(53, 12);
             this.label5.TabIndex = 8;
             this.label5.Text = "Stopbits";
+            this.label5.Visible = false;
             // 
             // comboBoxStopbits
             // 
@@ -173,6 +187,7 @@
             this.comboBoxStopbits.Name = "comboBoxStopbits";
             this.comboBoxStopbits.Size = new System.Drawing.Size(121, 20);
             this.comboBoxStopbits.TabIndex = 9;
+            this.comboBoxStopbits.Visible = false;
             // 
             // label6
             // 
@@ -182,6 +197,7 @@
             this.label6.Size = new System.Drawing.Size(71, 12);
             this.label6.TabIndex = 10;
             this.label6.Text = "FlowControl";
+            this.label6.Visible = false;
             // 
             // comboBoxFlowControl
             // 
@@ -194,6 +210,7 @@
             this.comboBoxFlowControl.Name = "comboBoxFlowControl";
             this.comboBoxFlowControl.Size = new System.Drawing.Size(121, 20);
             this.comboBoxFlowControl.TabIndex = 11;
+            this.comboBoxFlowControl.Visible = false;
             // 
             // buttonOpen
             // 
@@ -203,6 +220,7 @@
             this.buttonOpen.TabIndex = 12;
             this.buttonOpen.Text = "Open";
             this.buttonOpen.UseVisualStyleBackColor = true;
+            this.buttonOpen.Visible = false;
             this.buttonOpen.Click += new System.EventHandler(this.buttonOpen_Click);
             // 
             // buttonClose
@@ -213,6 +231,7 @@
             this.buttonClose.TabIndex = 13;
             this.buttonClose.Text = "Close";
             this.buttonClose.UseVisualStyleBackColor = true;
+            this.buttonClose.Visible = false;
             this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // pictureBoxPicture
@@ -261,7 +280,7 @@
             // 
             // buttonLoadPicture
             // 
-            this.buttonLoadPicture.Location = new System.Drawing.Point(706, 397);
+            this.buttonLoadPicture.Location = new System.Drawing.Point(706, 368);
             this.buttonLoadPicture.Name = "buttonLoadPicture";
             this.buttonLoadPicture.Size = new System.Drawing.Size(92, 22);
             this.buttonLoadPicture.TabIndex = 16;
@@ -277,6 +296,7 @@
             this.buttonPrintPicture.TabIndex = 17;
             this.buttonPrintPicture.Text = "PrintPicture";
             this.buttonPrintPicture.UseVisualStyleBackColor = true;
+            this.buttonPrintPicture.Visible = false;
             this.buttonPrintPicture.Click += new System.EventHandler(this.buttonPrintPicture_Click);
             // 
             // openFileDialogLoadPicture
@@ -284,11 +304,58 @@
             this.openFileDialogLoadPicture.FileName = "LoadPicture";
             this.openFileDialogLoadPicture.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialogLoadPicture_FileOk);
             // 
+            // groupBoxOutFormat
+            // 
+            this.groupBoxOutFormat.Controls.Add(this.checkBoxOutBin);
+            this.groupBoxOutFormat.Controls.Add(this.checkBoxOutCcode);
+            this.groupBoxOutFormat.Location = new System.Drawing.Point(706, 249);
+            this.groupBoxOutFormat.Name = "groupBoxOutFormat";
+            this.groupBoxOutFormat.Size = new System.Drawing.Size(92, 96);
+            this.groupBoxOutFormat.TabIndex = 18;
+            this.groupBoxOutFormat.TabStop = false;
+            this.groupBoxOutFormat.Text = "OutFormat";
+            // 
+            // checkBoxOutCcode
+            // 
+            this.checkBoxOutCcode.AutoSize = true;
+            this.checkBoxOutCcode.Checked = true;
+            this.checkBoxOutCcode.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBoxOutCcode.Location = new System.Drawing.Point(17, 21);
+            this.checkBoxOutCcode.Name = "checkBoxOutCcode";
+            this.checkBoxOutCcode.Size = new System.Drawing.Size(36, 16);
+            this.checkBoxOutCcode.TabIndex = 0;
+            this.checkBoxOutCcode.Text = ".c";
+            this.checkBoxOutCcode.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxOutBin
+            // 
+            this.checkBoxOutBin.AutoSize = true;
+            this.checkBoxOutBin.Checked = true;
+            this.checkBoxOutBin.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBoxOutBin.Location = new System.Drawing.Point(17, 53);
+            this.checkBoxOutBin.Name = "checkBoxOutBin";
+            this.checkBoxOutBin.Size = new System.Drawing.Size(48, 16);
+            this.checkBoxOutBin.TabIndex = 1;
+            this.checkBoxOutBin.Text = ".bin";
+            this.checkBoxOutBin.UseVisualStyleBackColor = true;
+            // 
+            // buttonPrintToFile
+            // 
+            this.buttonPrintToFile.Location = new System.Drawing.Point(706, 418);
+            this.buttonPrintToFile.Name = "buttonPrintToFile";
+            this.buttonPrintToFile.Size = new System.Drawing.Size(92, 23);
+            this.buttonPrintToFile.TabIndex = 19;
+            this.buttonPrintToFile.Text = "PrintToFile";
+            this.buttonPrintToFile.UseVisualStyleBackColor = true;
+            this.buttonPrintToFile.Click += new System.EventHandler(this.buttonPrintToFile_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(853, 514);
+            this.Controls.Add(this.buttonPrintToFile);
+            this.Controls.Add(this.groupBoxOutFormat);
             this.Controls.Add(this.buttonPrintPicture);
             this.Controls.Add(this.buttonLoadPicture);
             this.Controls.Add(this.groupBoxPaperSize);
@@ -313,6 +380,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPicture)).EndInit();
             this.groupBoxPaperSize.ResumeLayout(false);
             this.groupBoxPaperSize.PerformLayout();
+            this.groupBoxOutFormat.ResumeLayout(false);
+            this.groupBoxOutFormat.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -341,6 +410,10 @@
         private System.Windows.Forms.Button buttonLoadPicture;
         private System.Windows.Forms.Button buttonPrintPicture;
         private System.Windows.Forms.OpenFileDialog openFileDialogLoadPicture;
+        private System.Windows.Forms.GroupBox groupBoxOutFormat;
+        private System.Windows.Forms.CheckBox checkBoxOutBin;
+        private System.Windows.Forms.CheckBox checkBoxOutCcode;
+        private System.Windows.Forms.Button buttonPrintToFile;
     }
 }
 

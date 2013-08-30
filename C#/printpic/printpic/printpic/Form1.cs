@@ -154,5 +154,91 @@ namespace printpic
                 radioButton576_CheckedChanged(sender, e);
         }
 
+        private void buttonPrintToFile_Click(object sender, EventArgs e)
+        {
+            if (null == mBitmap)
+                return;
+            if (checkBoxOutCcode.Checked)
+                printBitmapToCcode(mBitmap, pictureBoxFilePath+".c");
+            if (checkBoxOutBin.Checked)
+                printBitmapToBin(mBitmap, pictureBoxFilePath+".bin");
+        }
+
+        private void printBitmapToCcode(Bitmap orgBitmap, string filepath)
+        {
+            byte[][] data = Pos.POS_BitmapToStream(orgBitmap);
+            if (null == data)
+                return;
+            Pos.format_K_dither16x16(data, data);
+            byte[] combineddata = Pos.TurnBitStreamToByte(data);
+            byte[] headdata = new byte[8];
+            int widthbytes = (data[0].Length + 7) / 8;
+            int heightbits = data.Length;
+            headdata[0] = 0x1d;
+            headdata[1] = 0x76;
+            headdata[2] = 0x30;
+            headdata[3] = 0x00;
+            headdata[4] = (byte)(widthbytes % 256);
+            headdata[5] = (byte)(widthbytes / 256);
+            headdata[6] = (byte)(heightbits % 256);
+            headdata[7] = (byte)(heightbits / 256);
+
+            try
+            {
+                StreamWriter sw = new StreamWriter(filepath, false, System.Text.Encoding.Default);
+                sw.Write("{\r\n\t");
+                for (int i = 0; i < headdata.Length; i++)
+                {
+                    sw.Write(string.Format("0x{0:x2}, ", headdata[i]));
+                }
+                sw.Write("\r\n\r\n\t");
+                for (int i = 0; i < combineddata.Length; i++)
+                {
+                    sw.Write(string.Format("0x{0:x2}, ", combineddata[i]));
+                    if (i % 8 == 7)
+                        sw.Write("\r\n\t");
+                }
+                sw.Write("\r\n};");
+                sw.Close();
+            }
+            catch (IOException e)
+            {
+            }
+        }
+
+        private void printBitmapToBin(Bitmap orgBitmap, string filepath)
+        {
+            byte[][] data = Pos.POS_BitmapToStream(orgBitmap);
+            if (null == data)
+                return;
+            Pos.format_K_dither16x16(data, data);
+            byte[] combineddata = Pos.TurnBitStreamToByte(data);
+            byte[] headdata = new byte[8];
+            int widthbytes = (data[0].Length + 7) / 8;
+            int heightbits = data.Length;
+            headdata[0] = 0x1d;
+            headdata[1] = 0x76;
+            headdata[2] = 0x30;
+            headdata[3] = 0x00;
+            headdata[4] = (byte)(widthbytes % 256);
+            headdata[5] = (byte)(widthbytes / 256);
+            headdata[6] = (byte)(heightbits % 256);
+            headdata[7] = (byte)(heightbits / 256);
+
+            try
+            {
+                FileStream fs = new FileStream(filepath, FileMode.Create);
+                BinaryWriter bw = new BinaryWriter(fs);
+                bw.Write(headdata);
+                bw.Write(combineddata);
+                bw.Close();
+                fs.Close();
+            }
+            catch (IOException e)
+            {
+
+            }
+        }
+
     }
 }
